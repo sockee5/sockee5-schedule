@@ -16,7 +16,11 @@ class LibraryCourse extends Component {
                 <Action className="library-course__action"/>
                 <div className="library-course__description">
                     <label>Course Description</label>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacinia ultricies tristique. Sed rutrum elit sed nibh tempor placerat. Nam dolor nulla, bibendum at eleifend sit amet, suscipit nec leo.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacinia 
+                        ultricies tristique. Sed rutrum elit sed nibh tempor placerat. 
+                        Nam dolor nulla, bibendum at eleifend sit amet, suscipit nec leo.
+                    </p>
                 </div>
             </div>
         )
