@@ -1,4 +1,7 @@
-import { FETCH_COURSES } from '../actions/types';
+import { 
+    FETCH_COURSES,
+    Toggle_Enrolled
+ } from '../actions/types';
 
 export default function (state = [], action) {
     switch (action.type) {
@@ -8,6 +11,8 @@ export default function (state = [], action) {
                 ...state,
                 ...action.payload
             ]
+         case Toggle_Enrolled:
+            return state
 
         default:
             return state;
