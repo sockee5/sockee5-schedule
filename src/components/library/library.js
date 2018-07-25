@@ -24,14 +24,14 @@ class Library extends Component {
             <div className="library">
                 <h1 className="library__title">Course Library</h1>
                 { this.renderCourses() }
-            </div> 
+            </div>
         )
     }
 }
 
 function mapStateToProps(state) {
     return {
-         courses: state.courses
+        courses: state.courses
     }
 }
 

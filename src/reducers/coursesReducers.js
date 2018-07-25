@@ -1,7 +1,7 @@
-import { 
+import {
     FETCH_COURSES,
     Toggle_Enrolled
- } from '../actions/types';
+} from '../actions/types';
 
 export default function (state = [], action) {
     switch (action.type) {
@@ -11,9 +11,16 @@ export default function (state = [], action) {
                 ...state,
                 ...action.payload
             ]
-         case Toggle_Enrolled:
-            return state
-
+        case Toggle_Enrolled:
+            const newCourses = state.map(course => {
+                if(course.id == action.payload) {
+                    course.enrolled = !course.enrolled
+                }
+                return course
+            })
+            return [
+                ...newCourses
+            ]
         default:
             return state;
     }

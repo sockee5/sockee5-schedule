@@ -12,18 +12,19 @@ class Schedule extends Component {
 
         return data.map((course, index) => {
             if(course.enrolled) {
-                return <ScheduleCourse {...course} key={index} />
+                return <ScheduleCourse {...course} key={index}/>
             }
         })
     }
+
 
     render() {
         return (
             <div className="schedule">
                 <h1 className="schedule__title">My Schedule</h1>
-                { this.renderCourses }
-                <ProgressTracker />
-                <Gradient />
+                { this.renderCourses() }
+                <ProgressTracker/>
+                <Gradient/>
             </div>
         )
     }
