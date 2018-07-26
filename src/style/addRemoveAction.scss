@@ -18,7 +18,9 @@ position: relative;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%);
+
+        transition: all .3s ease;
     }
 
     &:before {
@@ -29,10 +31,14 @@ position: relative;
     &:after {
         height: .2em;
         width: 1em;
+    }
+}
 
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
+.action-remove {
+    &:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &:after {
+        transform: translate(-50%, -50%) rotate(45deg);
     }
 }
